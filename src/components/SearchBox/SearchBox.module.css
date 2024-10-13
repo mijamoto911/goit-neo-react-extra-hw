@@ -1,0 +1,26 @@
+.input {
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+.label {
+  margin: 0px;
+}
+.btn {
+  margin-left: 10px;
+
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.btn:hover {
+  background-color: #e0e0e0;
+}
