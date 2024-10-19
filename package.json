@@ -12,6 +12,7 @@
   "dependencies": {
     "@kineticcafe/rollup-plugin-delete": "^3.0.1",
     "@reduxjs/toolkit": "^2.2.8",
+    "axios": "^1.7.7",
     "formik": "^2.4.6",
     "lobash": "^1.0.0",
     "modern-normalize": "^3.0.1",

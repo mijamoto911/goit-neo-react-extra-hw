@@ -13,6 +13,7 @@ const SearchBox = () => {
   return (
     <div className={css.searchBox}>
       <input
+        className={css.input}
         type="text"
         value={filter}
         onChange={handleSearchChange}
