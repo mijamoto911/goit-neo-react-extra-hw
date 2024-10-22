@@ -30,12 +30,10 @@ export const logIn = createAsyncThunk(
   async (credentials, thunkAPI) => {
     try {
       const response = await axios.post('/users/login', credentials);
-      console.log('Full login response:', response);
-      console.log('Login response data:', response.data);
+
       setAuthHeader(response.data.token);
       return response.data;
     } catch (error) {
-      console.log('Login error:', error);
       return thunkAPI.rejectWithValue(error.message);
     }
   }
@@ -56,8 +54,6 @@ export const refreshUser = createAsyncThunk(
   async (_, thunkAPI) => {
     const state = thunkAPI.getState();
     const persistedToken = state.auth.token;
-
-    console.log('Persisted Token in refreshUser:', persistedToken);
 
     if (!persistedToken) {
       return thunkAPI.rejectWithValue('No token available');
